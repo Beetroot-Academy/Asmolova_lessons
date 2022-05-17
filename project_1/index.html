@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bhromaon</title>
     <link rel="stylesheet" href="src/icon/iconsfont.css">
     <link rel="stylesheet" href="src/fonts/fonts.css">
     <link rel="stylesheet" href="style/style.css">
@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="header" style="background: url(src/img/head_bg.png);">
-        <div class="container">
+        <div class="container header__container">
             <h1 class="header__title">Bhromaon</h1>
             <p class="header__subtitle">Safe Travel Anywhere</p>
             <form action="" class="header__form-search">
@@ -26,104 +26,114 @@
             </a>
         </div>
 
-        <div class="header__nav" id="navigation">
-            <div class="header__nav-container">
-                <a  href="#"><img class="header__nav-container-logo header__logo" src="src/img/logo.png" alt=""></a>
-                <nav class="header__navbox">
-                    <a href="#choose-us" class="header__navbox-link">Who We Are</a>
-                    <a href="#how-it-works" class="header__navbox-link">What We Do</a>
-                    <a href="#spain" class="header__navbox-link">Travel with us</a>
-                    <a href="#footerbox" class="header__navbox-link">Contact Us</a>
+        <div class="header__menu" id="navigation">
+            <div class="header__menu-container">
+                <div class="header__menu-logo header__logo">
+                    <a  href="#">
+                        <img  src="src/img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="header__nav nav ">
+                    <div class="burger-menu">
+                        <input id="menu-toggle" type="checkbox" />
+                        <label class="menu-btn" for="menu-toggle">
+                          <span></span>
+                        </label> 
+
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#choose-us" class="nav__link">Who We Are</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#how-it-works" class="nav__link">What We Do</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#spain" class="nav__link">Travel with us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#footerbox" class="nav__link">Contact Us</a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
-        </div>
-
-        <div class="header__burger">
-            <p class="header__burger__title">Bhromaon</p>
-                <input type="checkbox" id="check-menu">
-                <label for="check-menu"></label>
-                <div class="burger-line first"></div>
-                <div class="burger-line second"></div>
-                <div class="burger-line third"></div>
-                <div class="burger-line fourth"></div>
-                <nav class="main-menu">
-                    <a href="#choose-us" class="menu__link">Who We Are</a>
-                    <a href="#how-it-works" class="menu__link">What We Do</a>
-                    <a href="#spain" class="menu__link">Travel with us</a>
-                    <a href="#footerbox" class="menu__link">Contact Us</a>
-                </nav>
         </div>
     </header>
 
     <main>
-        <section id="choose-us" style="background: url(src/img/WCU-bg.png);">
-            <div class="container">
-                <div class="container__box1">
-                    <h2 class="box1__title">Why Choose Us</h2>
-                    <p class="box1__text">Tion and dislike men who are so beguiled and demoralized by desire by the charms
-                        of pleasure of the moment, so blinded by desire, that they cannot foresee </p>
-                    <p class="box1__text">Ddislike men who are so beguiled and demoralized by the charms of pleasure of the
-                        moment, so blinded by desire, that.</p>
-                    <button class="box1__btn" type="submit">Explore Places</button>
+        <section class="choose-us" id="choose-us" style="background: url(src/img/WCU-bg.png);">
+            <div class="container choose-us__container">
+                <div class="content">
+                    <h2 class="content__title">Why Choose Us</h2>
+                    <div class="content__text">
+                        <p>Tion and dislike men who are so beguiled and demoralized by desire by the charms
+                            of pleasure of the moment, so blinded by desire, that they cannot foresee 
+                        </p>
+                        <p>Ddislike men who are so beguiled and demoralized by the charms of pleasure of the
+                            moment, so blinded by desire, that.
+                        </p>
+                    </div>
+                    <button class="btn" type="submit">Explore Places</button>
                 </div>
-                <div class="container__box2">
-                    <img class="container__box2__photo" src="src/img/box1-img1.png" alt="Bhromaon mountains">
-                    <img src="src/img/box1-img2.png" alt="Bhromaon lake">
+                <div class="foto">
+                    <div class="foto__box">
+                        <img  src="src/img/box1-img1.png" alt="Bhromaon mountains">
+                    </div>
+                    <div>
+                        <img src="src/img/box1-img2.png" alt="Bhromaon lake">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="how-it-works">
-            <div class="container">
-                <div class="box-one">
+        <section class="how-it-works" id="how-it-works">
+            <div class="container how-it-works__container">
+                <div class="search">
                     <span class="icon-search"></span>
                     <p>Search Places</p>
                 </div>
-                <div class="box-two">
+                <div class="select">
                     <span class="icon-check"></span>
                     <p>Select Places</p>
                 </div>
-                <div class="box-three">
+                <div class="book">
                     <span class="icon-like"></span>
                     <p>Book & Enjoy</p>
                 </div>
             </div>
         </section>
 
-        <section class="spain" id="spain">
-            <div class="spain__group group-one" style="background: url(src/img/spain-bg1.png);">
-                <div class="container">
-                    <div class="spain__group-box group-one__box">
-                        <p class="spain__group-box-head">Spain</p>
-                        <h4 class="spain__group-box-title">Grand Spain Madrid</h4>
-                        <p class="spain__group-box-text">But I must explain to you how all this mistaken idea of account to denouncing
-                            pleasure and praising pain was account born and I account will give you a complete account of
-                            the system
-                        </p>
-                        <button class="spain__group-box-btn" type="submit">BOOK NOW</button>
-                    </div>
+        <section class="spain spain-one" id="spain" style="background: url(src/img/spain-bg1.png);">
+            <div class="container spain__container">
+                <div class="spain__group-box spain-one__box">
+                    <span class="spain__group-box-head">Spain</span>
+                    <h2 class="spain__group-box-title">Grand Spain Madrid</h2>
+                    <p class="spain__group-box-text">But I must explain to you how all this mistaken idea of account to denouncing
+                        pleasure and praising pain was account born and I account will give you a complete account of
+                        the system
+                    </p>
+                    <button class="btn" type="submit">BOOK NOW</button>
                 </div>
             </div>
+         </section>   
 
-            <div class="spain__group  group-two" style="background: url(src/img/spain-bg2.png);">
-                <div class="container">
-                    <div class="spain__group-box group-two__box">
-                        <p class="spain__group-box-head">Spain</p>
-                        <h4 class="spain__group-box-title">Grand Spain Madrid</h4>
-                        <p class="spain__group-box-text">
-                            But I must explain to you how all this mistaken idea of account to denouncing
-                            pleasure and praising pain was account born and I account will give you a complete account of
-                            the system
-                        </p>
-                        <button class="spain__group-box-btn" type="submit">BOOK NOW</button>
-                    </div>
+         <section class="spain spain-two" id="spain" style="background: url(src/img/spain-bg2.png);">
+            <div class="container spain__container">
+                <div class="spain__group-box spain-two__box">
+                    <span class="spain__group-box-head">Spain</span>
+                    <h2 class="spain__group-box-title">Grand Spain Madrid</h2>
+                    <p class="spain__group-box-text">
+                        But I must explain to you how all this mistaken idea of account to denouncing
+                        pleasure and praising pain was account born and I account will give you a complete account of
+                        the system
+                    </p>
+                    <button class="btn" type="submit">BOOK NOW</button>
                 </div>
             </div>
         </section>
 
         <section class="comment" id="comment" style="background: url(src/img/comment-bg.png);">
-            <div class="container">
-                <h3 class="comment__title">What Our Tourist Say</h3>
+            <div class="container comment__container">
+                <h2 class="comment__title">What Our Tourist Say</h2>
                 <div class="comment__box">
                     <img class="comment__box-img" src="src/img/comment-photo.png" alt="">
                     <din class="comment__box-message">
@@ -144,7 +154,7 @@
     </main>
 
     <footer class="footer" id="footerbox">
-        <div class="container">
+        <div class="container footer__container">
             <img class="footer__logo" src="src/img/logo.png" alt="">
             <p class="footer__subtitle">Safe Travel Anywhere</p>
             <div class="footer__social">
