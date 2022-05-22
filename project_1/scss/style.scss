@@ -40,6 +40,7 @@ li {
     background: $blue linear-gradient(45deg, rgba(73,107,254,1) 0px, rgba(73,107,254,1) 77px, rgba(73,107,254,0) 77px, rgba(73,107,254,0) 225px);
     transition: ease-in-out 0.7s;
     opacity: 1;
+    cursor: pointer;
 
     &:hover {
         background: $LiteBlue;
@@ -53,8 +54,6 @@ li {
 
 .header {
     width: 100%;
-    max-width: 1770px;
-    min-height: 100vh;
     margin: 0 auto;
     background-repeat: no-repeat;
     font-family: 'Josefin Sans';
@@ -172,7 +171,7 @@ li {
     }
 
     #menu-toggle {
-          opacity: 0;
+     opacity: 0;
     }
 
     .nav {
@@ -183,15 +182,17 @@ li {
             gap: 30px;
             padding-bottom: 15px;
         }
-
+        
         &__link {
-            text-transform: uppercase;
             display: inline-block;
             font-family: 'Aleo';
             font-size: 14px;
             text-transform: uppercase;
-            border-bottom: 2px solid transparent;
-            transition: all ease-in-out 0.5s;
+            transition: all 0.7s ease-in-out;
+            
+            &:hover{
+                border-bottom: 2px solid $white;
+            }
         }
     }
 
@@ -219,11 +220,12 @@ li {
             list-style: none;
             background-color: $dark;
             opacity: 0.9;
+            z-index: 4;
         }
 
         .nav__item {
             display: block;
-            padding: 12px 24px;
+            padding: 24px;
             color: #333;
             font-family: 'Roboto', sans-serif;
             font-size: 20px;
@@ -236,17 +238,17 @@ li {
             }
         }
 
+        .nav__link {
+            font-size: 25px;
+        }
+
         .menu-btn{
             display: flex;
             align-items: center;
-            // position: absolute;
-            // top: 0;
-            // left: 50%;
             transform: translate(-50%,0);
             width: 38px;
             height: 26px;
             cursor: pointer;
-            z-index: 4;
         }
            
         .menu-btn > span,
@@ -298,12 +300,6 @@ li {
     }
 
     @media screen and (max-width: $tablet) {
-        // #navigation  {
-        //     font-size: 24px;
-        //     text-align: left;
-        //     padding-top: 28px;
-        // }
-
         .header__form-search .header__form-search-text {
             padding-right: 10px;
         }
@@ -323,11 +319,11 @@ li {
                 flex-direction: column;
                 max-width: 230px;
                 align-items: center;
-                height: 70px;
+                height: 100px;
             }
 
             &__form-search-btn {
-                height: 28px;
+                height: 50px;
                 width: 100%;
                 max-width: 228px;
             }
@@ -359,8 +355,13 @@ li {
         display: flex;
         justify-content: space-between;
         text-align: justify;
-        padding: 119px 0 119px;
+        padding-top: 119px;
+        padding-bottom: 119px;
         color: #fff;
+
+        @media screen and (max-width: $tablet) {
+            flex-direction: column-reverse;
+        }
     
     }
 
@@ -490,6 +491,7 @@ li {
     @media screen and (max-width: $tablet) {
         .search, .select, .book {
             margin: 0;
+            padding: 15px;
         }
     }
 
@@ -497,7 +499,7 @@ li {
         .container {
             height: auto;
             flex-direction: column;
-            padding-top: 10px;
+            padding: 30px;
         }
 
 
@@ -591,7 +593,7 @@ li {
     margin: 0 auto;
 
     &__container {
-        padding-top: 100px;
+        padding-top: 50px;
         text-align: justify;
 
         @media screen and (max-width: $tablet) {
@@ -603,7 +605,7 @@ li {
         font-family: 'Aleo';
         font-size: 36px;
         font-weight: 400;
-        padding-bottom: 93px;
+        padding-bottom: 50px;
         text-align: center;
         color: #fff;
         letter-spacing: 0.03rem;
@@ -651,6 +653,7 @@ li {
 
         @media screen and (max-width: 1058px) {
             padding: 2%;
+            padding-bottom: 30px;
             @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
                 max-width: 445px;
                 background-color: transparent;
@@ -698,6 +701,16 @@ li {
 
         span:hover {
             color: $blue;
+        }
+
+        @media screen and (max-width: $mobile) {
+            max-width: 200px;
+        }
+    }
+
+    &__icon {
+        @media screen and (max-width: $mobile) {
+            font-size: 25px;
         }
     }
 }
