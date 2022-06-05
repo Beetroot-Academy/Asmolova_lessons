@@ -27,10 +27,6 @@
     margin: 0;
 }
 
-/* body {
-    background: #E5E5E5;
-} */
-
 a {
     text-decoration: none;
 }
@@ -75,7 +71,6 @@ a {
 .hero-section {
     width: 100vw;
     padding-top: 129px;
-    /* position: relative; */
 }
 
 .hero-section::after {
@@ -85,7 +80,6 @@ a {
     background-size: cover;
     background-image: url(src/img/Vector\ 2.png);
     display: block;
-    /* position: absolute; */
     position: fixed;
     top: -15px;
     right: -58px;
@@ -154,7 +148,6 @@ a {
 
 .services-section {
     padding-top: 190px;
-    /* position: relative; */
 }
 
 .services-section::before {
@@ -210,7 +203,6 @@ a {
 
 .services__item:hover{
     transform: translateY(-50px) scale(1.1);
-    /* z-index: 1; */
 }
 
 .services__name {
