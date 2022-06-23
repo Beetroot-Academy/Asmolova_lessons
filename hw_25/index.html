@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script defer src="./scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="title">Hello everybody!</h1>
+    </header>
+    
+    <main>
+        <section class="playlist-section">
+            <h2>Playlist</h2>
+        </section>
+
+        <section class="task-two">
+            <button class="btn">Open me</button>
+            <div class="mymodal">
+                <div class="mymodal__conteiner">
+                    <div class="mymodal__content">
+                        <h2 class="mymodal__subtitle">My Mood</h2>
+                        <img class="mymodal__img" src="./src/mymood.png" alt="MyMood">
+                    </div>
+                    <button class="mymodal__close">Close</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="trafficlight">
+            <div class="trafficlight__list">
+                <div class="trafficlight__item red"></div>
+                <div class="trafficlight__item yellow"></div>
+                <div class="trafficlight__item green"></div>
+            </div>
+            <button onclick="start()" class="traffic-btn">Next color</button>
+        </section>
+    </main>
+
+    <footer></footer>
+
+</body>
+</html>

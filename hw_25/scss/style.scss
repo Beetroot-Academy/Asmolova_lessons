@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.title {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.playlist-section {
+    padding: 30px 40px;
+}
+
+.task-two {
+    text-align: center;
+}
+
+.mymodal {
+   visibility: hidden;
+   width: 500px;
+   height: 450px;
+   border: 1px solid olivedrab;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: darkkhaki;
+   z-index: 2;
+
+   &__subtitle {
+       padding-bottom: 15px;
+   }
+
+   &__img {
+       width: 300px;
+       height: 300px;
+       padding-bottom: 10px;
+   }
+
+   &__close {
+       width: 80px;
+       height: 35px;
+       border-radius: 50px;
+       background-color: yellow;
+       color: lightseagreen;
+       border: 1px solid lightblue;
+       cursor: pointer;
+   }
+
+}
+
+.active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 3;
+}
+
+.btn {
+    margin-bottom: 50px;
+    width: 80px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: navajowhite;
+    color: lightseagreen;
+    border: 1px solid lightblue;
+    cursor: pointer;
+}
+
+.trafficlight {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 500px;
+        width: 300px;
+        padding-top: 18px;
+    }
+    &__item {
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: 150px;
+            border-radius: 100px;
+            background-color: gray;
+            z-index: 2;
+        }
+        &.active::before {
+            display: none;
+        }
+    }
+
+    .red {
+        background-color: red;
+    }
+
+    .yellow {
+        background-color: yellow;
+    }
+
+    .green {
+        background-color: green;
+    }
+
+    .traffic-btn {
+        width: 100px;
+        height: 50px;
+    }
+
+}
