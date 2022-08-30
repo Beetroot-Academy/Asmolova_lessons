@@ -4,10 +4,13 @@
       <div>
         <img src="./assets/icons/logo.png" class="my-logo text-left" />
       </div>
+
       <div class="text-right p-4">
-        <router-link to="/" class="ml-5">Home</router-link>
-        <router-link to="/about" class="ml-5">About</router-link>
-        <router-link to="/contact" class="ml-5">Contact Us</router-link>
+        <div class="text-nav">
+          <router-link to="/" class="ml-5">Home</router-link>
+          <router-link to="/about" class="ml-5">About</router-link>
+          <router-link to="/contact" class="ml-5">Contact Us</router-link>
+        </div>
       </div>
     </div>
 
@@ -53,17 +56,8 @@
   background-color: #2c3e50;
 }
 
-.my-logo {
-  width: 50px;
-  height: 50px;
-}
-
 #footer {
   background-color: #2c3e50;
-}
-
-.full-height {
-  min-height: 100vh;
 }
 
 #nav {
@@ -77,10 +71,21 @@
   font-weight: bold;
   color: #ffffff;
   font-size: 20px;
+  padding-left: 20px;
+  text-decoration: none;
 }
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+.my-logo {
+  width: 50px;
+  height: 50px;
 }
 
 /* Start my icons and colors style */
@@ -89,10 +94,11 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
+  gap: 10px;
 }
 
 .fa {
-  width: 30px;
+  width: 35px;
   padding: 7px;
   font-size: 20px;
   text-align: center;

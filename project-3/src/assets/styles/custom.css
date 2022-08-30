@@ -2,13 +2,11 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  
 }
 
 .container {
   max-width: 400px !important;
   min-width: 360px !important;
-
 }
 .title {
   font-size: 50px;
@@ -81,5 +79,5 @@
 .form-control:focus {
   box-shadow: none;
   border-color: inherit;
-  font-size: 36px;
+  font-size: 26px;
 }
